@@ -3,8 +3,6 @@ import gradio as gr
 
 client = OpenAI()
 
-OPENAI_API_KEY='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'
-
 def chat_with_model(user_input):
   response = client.chat.completions.create(
       model="ft:gpt-3.5-turbo-1106:personal::8dlPomGc",
@@ -14,8 +12,6 @@ def chat_with_model(user_input):
       ]
   )
   return response.choices[0].message.content
-
-# export OPENAI_API_KEY=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
 
 chatbot = gr.Interface(
     fn=chat_with_model,

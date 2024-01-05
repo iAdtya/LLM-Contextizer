@@ -1,8 +1,6 @@
 from openai import OpenAI
 import time
 
-OPENAI_API_KEY='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'
-
 client = OpenAI()
 
 #Create file fr fine-tuning

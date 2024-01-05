@@ -1,7 +1,6 @@
 import pandas as pd
 from ntscraper import Nitter
 
-
 scraper = Nitter()
 
 tweets = scraper.get_tweets("ARanganathan72",mode='user',number=5)
